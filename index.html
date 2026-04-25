@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Camille for CSE</title>
+    <meta
+      name="description"
+      content="A playful campaign microsite inviting visitors to discover Camille as their ideal CSE candidate."
+    />
+    <meta name="theme-color" content="#fff7fa" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Shadows+Into+Light+Two&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-glow page-glow-left" aria-hidden="true"></div>
+    <div class="page-glow page-glow-right" aria-hidden="true"></div>
+
+    <main class="site-shell" id="selection-view">
+      <section class="page-frame">
+        <p class="hero-note">
+          It takes 30 seconds
+          <span>(and 0 calories)</span>
+          <img
+            class="hero-note-squiggle"
+            src="assets/traits.png"
+            alt=""
+            aria-hidden="true"
+          />
+          <img
+            class="hero-note-arrow"
+            src="assets/fleche-bleue.png"
+            alt=""
+            aria-hidden="true"
+          />
+        </p>
+
+        <header class="hero">
+          <h1 class="hero-title">
+            <span class="hero-title-base">Looking for your</span>
+            <span class="hero-title-accent">ideal CSE candidate?</span>
+          </h1>
+          <p class="hero-subtitle">Tick what matters to you:</p>
+        </header>
+
+        <form class="selector-form" novalidate>
+          <div class="cards-grid">
+            <label class="choice-card" style="--card-delay: 70ms">
+              <span class="choice-icon" aria-hidden="true">
+                <i class="ph ph-ear"></i>
+              </span>
+              <span class="choice-copy">
+                <span class="choice-main">Listens to colleagues</span>
+              </span>
+              <input
+                class="choice-checkbox"
+                type="checkbox"
+                name="candidate_traits"
+                value="listens"
+              />
+            </label>
+
+            <label class="choice-card" style="--card-delay: 120ms">
+              <span class="choice-icon" aria-hidden="true">
+                <i class="ph ph-chat-centered-dots"></i>
+              </span>
+              <span class="choice-copy">
+                <span class="choice-main">Asks useful questions</span>
+                <span class="choice-aside">(most of the time)</span>
+              </span>
+              <input
+                class="choice-checkbox"
+                type="checkbox"
+                name="candidate_traits"
+                value="questions"
+              />
+            </label>
+
+            <label class="choice-card" style="--card-delay: 170ms">
+              <span class="choice-icon" aria-hidden="true">
+                <i class="ph ph-users-three"></i>
+              </span>
+              <span class="choice-copy">
+                <span class="choice-main">29 years of experience in diplomacy</span>
+                <span class="choice-aside">(a.k.a. the eldest child syndrome)</span>
+              </span>
+              <input
+                class="choice-checkbox"
+                type="checkbox"
+                name="candidate_traits"
+                value="diplomacy"
+              />
+            </label>
+
+            <label class="choice-card" style="--card-delay: 220ms">
+              <span class="choice-icon" aria-hidden="true">
+                <i class="ph ph-leaf"></i>
+              </span>
+              <span class="choice-copy">
+                <span class="choice-main">Stays calm in complicated situations</span>
+                <span class="choice-aside">(despite being a Leo)</span>
+              </span>
+              <input
+                class="choice-checkbox"
+                type="checkbox"
+                name="candidate_traits"
+                value="calm"
+              />
+            </label>
+
+            <label class="choice-card" style="--card-delay: 270ms">
+              <span class="choice-icon" aria-hidden="true">
+                <i class="ph ph-scales"></i>
+              </span>
+              <span class="choice-copy">
+                <span class="choice-main">Believes in fairness</span>
+              </span>
+              <input
+                class="choice-checkbox"
+                type="checkbox"
+                name="candidate_traits"
+                value="fairness"
+              />
+            </label>
+
+            <label class="choice-card" style="--card-delay: 320ms">
+              <span class="choice-icon" aria-hidden="true">
+                <i class="ph ph-trophy"></i>
+              </span>
+              <span class="choice-copy">
+                <span class="choice-main">
+                  Survived one mandate
+                </span>
+              </span>
+              <input
+                class="choice-checkbox"
+                type="checkbox"
+                name="candidate_traits"
+                value="mandate"
+              />
+            </label>
+
+            <label class="choice-card" style="--card-delay: 370ms">
+              <span class="choice-icon" aria-hidden="true">
+                <i class="ph ph-file-text"></i>
+              </span>
+              <span class="choice-copy">
+                <span class="choice-main">
+                  Reads long legal document until the end
+                </span>
+              </span>
+              <input
+                class="choice-checkbox"
+                type="checkbox"
+                name="candidate_traits"
+                value="legal"
+              />
+            </label>
+
+            <label class="choice-card" style="--card-delay: 420ms">
+              <span class="choice-icon" aria-hidden="true">
+                <i class="ph ph-lightbulb-filament"></i>
+              </span>
+              <span class="choice-copy">
+                <span class="choice-main">Has a lot of ideas</span>
+                <span class="choice-aside">(probably too many but keep them coming)</span>
+              </span>
+              <input
+                class="choice-checkbox"
+                type="checkbox"
+                name="candidate_traits"
+                value="ideas"
+              />
+            </label>
+          </div>
+
+          <div class="cta-panel">
+            <button class="reveal-button" id="reveal-button" type="button" disabled>
+              <i class="ph ph-lock-key" aria-hidden="true"></i>
+              <span>Show my candidate</span>
+            </button>
+            <p class="helper-text">Tick at least 3 boxes</p>
+            <p class="sr-only" id="selection-status" aria-live="polite"></p>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <section
+      class="reveal-overlay"
+      id="reveal-overlay"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="reveal-title"
+      aria-hidden="true"
+    >
+      <div class="overlay-backdrop" aria-hidden="true"></div>
+
+      <div class="overlay-panel" id="overlay-panel" tabindex="-1">
+        <img class="overlay-decor overlay-decor-traits-left" src="assets/traits.png" alt="" aria-hidden="true" />
+        <img class="overlay-decor overlay-decor-traits-right" src="assets/traits.png" alt="" aria-hidden="true" />
+        <img class="overlay-decor overlay-decor-traits-photo" src="assets/traits.png" alt="" aria-hidden="true" />
+        <img class="overlay-decor overlay-decor-star" src="assets/etoile.png" alt="" aria-hidden="true" />
+        <img class="overlay-decor overlay-decor-star-two" src="assets/etoile.png" alt="" aria-hidden="true" />
+        <img class="overlay-decor overlay-decor-star-three" src="assets/etoile.png" alt="" aria-hidden="true" />
+        <img class="overlay-decor overlay-decor-serpentin-left" src="assets/serpentin.png" alt="" aria-hidden="true" />
+        <img class="overlay-decor overlay-decor-serpentin-right" src="assets/serpentin.png" alt="" aria-hidden="true" />
+        <img class="overlay-decor overlay-decor-carre-left" src="assets/carre.png" alt="" aria-hidden="true" />
+        <img class="overlay-decor overlay-decor-carre-right" src="assets/carre.png" alt="" aria-hidden="true" />
+        <img class="overlay-decor overlay-decor-carre-mid-left" src="assets/carre.png" alt="" aria-hidden="true" />
+        <img class="overlay-decor overlay-decor-carre-mid-right" src="assets/carre.png" alt="" aria-hidden="true" />
+
+        <header class="overlay-header">
+          <h2 class="overlay-title" id="reveal-title">
+            <span class="overlay-title-base">Good news...</span>
+            <span class="overlay-title-accent">you just described Camille</span>
+          </h2>
+        </header>
+
+        <div class="portrait-stage">
+          <figure class="portrait-frame">
+            <img
+              src="assets/camille.jpg"
+              alt="Portrait of Camille"
+            />
+          </figure>
+
+          <div class="overlay-note-group">
+            <p class="overlay-note">What a coincidence.</p>
+            <img
+              class="overlay-note-arrow"
+              src="assets/fleche-bleue.png"
+              alt=""
+              aria-hidden="true"
+            />
+          </div>
+        </div>
+
+        <p class="overlay-support">
+          Running for a second CSE mandate.
+          <span aria-hidden="true">💪</span>
+        </p>
+
+        <p class="overlay-handwritten">
+          I'm counting on you. You can count on me
+          <img class="inline-heart" src="assets/coeur.png" alt="" aria-hidden="true" />
+        </p>
+
+        <p class="vote-pill">
+          <i class="ph ph-calendar-heart" aria-hidden="true"></i>
+          <span>On 5 May, vote for Camille</span>
+        </p>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
